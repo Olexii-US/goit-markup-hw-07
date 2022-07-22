@@ -798,17 +798,19 @@ body {
 /* portfolio */
 /* Фільтр */
 
-.filter {
+.portfolio {}
+
+.portfolio__filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.filter> li:not(:last-child) {
+.portfolio__filter-item:not(:last-child) {
   margin-right: 8px;
 }
 
-.button-filter {
+.portfolio__filter-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -827,8 +829,8 @@ body {
 
   transition: box-shadow 250ms var(--cubic-bezier-stand), background-color 250ms var(--cubic-bezier-stand), color 250ms var(--cubic-bezier-stand);
 }
-.button-filter:hover,
-.button-filter:focus {
+.portfolio__filter-button:hover,
+.portfolio__filter-button:focus {
   color: var(--main-background);
   background-color: var(--accent-colour);
 
@@ -838,38 +840,40 @@ body {
 }
 /* < !-- Елементи фільтру --> */
 
-.project-items {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
   /* justify-content: space-between; */
 }
 
-.project-items> li {
+/* project */
+.project {
   margin-right: 30px;
   margin-bottom: 30px;
   width: calc((100% - 60px) / 3);
   /* gap: 30px; */
 }
 
-.project-link {
+.project:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.project:nth-last-child(-n+3) {
+  margin-bottom: 0px;
+}
+
+.project__link {
   display: block;
   transition: box-shadow 250ms var(--cubic-bezier-stand);
 }
 
-.project-link:hover,
-.project-link:focus {
+.project__link:hover,
+.project__link:focus {
   box-shadow: 0px 4px 4px 0px #00000040;
   ;
 }
 
-.project-items> li:nth-child(3n) {
-  margin-right: 0px;
-}
-.project-items> li:nth-last-child(-n+3) {
-  margin-bottom: 0px;
-}
-
-.project-link-container {
+.project__container {
   border-left: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
@@ -877,14 +881,14 @@ body {
   padding: 20px 24px;
 }
 
-.project-title {
+.project__title {
   font-size: 18px;
   line-height: 2.00;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
 }
 
-.project-text {
+.project__text {
   margin-top: 4px;
 
   font-size: 16px;
@@ -892,12 +896,12 @@ body {
   color: var(--secondary-text-color);
 }
 
-.project-img {
+.project__overlay {
   position: relative;
   overflow: hidden;
 }
 
-.project-overlay {
+.project__overlay-text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -915,18 +919,18 @@ body {
 }
 
 /* Текс і фон окремі при ховері */
-/* .project-overlay {
+/* .project__overlay-text {
   opacity: 0;
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);}
-.project-link:hover .project-overlay {
+.project__link:hover .project__overlay-text {
   opacity: 1;
 } */
 
-.project-link:hover .project-overlay {
+.project__link:hover .project__overlay-text {
   transform: translateY(0);
 }
 
-.project-img::before {
+.project__overlay::before {
   content: '';
   position: absolute;
 
@@ -941,6 +945,6 @@ body {
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.project-link:hover .project-img::before {
+.project__link:hover .project__overlay::before {
   transform: translateY(0);
 }
