@@ -1,38 +1,40 @@
 /* Наші особливості */
 
-.feature__list {
+.feature {
+    &__list {
     display: flex;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__item {
+        width: 270px;
+    }
+
+    &__title {
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        line-height: 1.71;
+
+        color: var(--secondary-text-color);
+    }
+
+    &__box {
+        width: 270px;
+        height: 120px;
+        background-color: var(--alternative-background);
+        border-radius: 4px;
+
+        @extend %centered-flex;
+
+        margin-bottom: 30px;
+    }
 }
 
-.feature__item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.feature__item {
-    width: 270px;
-}
-
-.feature__title {
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.feature__text {
-    line-height: 1.71;
-
-    color: var(--secondary-text-color);
-}
-
-.feature__box {
-    width: 270px;
-    height: 120px;
-    background-color: var(--alternative-background);
-    border-radius: 4px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-}

@@ -3,16 +3,16 @@
 .footer {
     background-color: var(--secondary-background);
     padding: 60px 0;
-}
 
-.footer__box {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-}
+    &__box {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
 
-.footer__contacts {
-    margin-right: 70px;
+    &__contacts {
+        margin-right: 70px;
+    }
 }
 
 .address {
@@ -21,18 +21,14 @@
     margin-top: 20px;
 
     color: var(--primary-white-color);
-}
 
-/* .address > ul {
-  display: inline-block;
-} */
+    &__link {
+        color: var(--footer-gray);
+        margin-top: 9px;
+        display: inline-block;
 
-.address__link {
-    color: var(--footer-gray);
-    margin-top: 9px;
-    display: inline-block;
-
-    transition: color 250ms var(--cubic-bezier-stand);
+        transition: color 250ms var(--cubic-bezier-stand);
+    }
 }
 
 .address__link:hover,
@@ -55,16 +51,16 @@
 
 .footer-social {
     margin-top: 20px;
-}
 
-.footer-social__item {
-    fill: var(--primary-white-color);
-}
+    &__item {
+        fill: var(--primary-white-color);
+    }
 
-.footer-social__link {
-    background-color: rgba(255, 255, 255, 0.1);
+    &__link {
+        background-color: rgba(255, 255, 255, 0.1);
 
-    transition: background-color 250ms var(--cubic-bezier-stand);
+        transition: background-color 250ms var(--cubic-bezier-stand);
+    }
 }
 
 .footer-social__link:hover,
@@ -103,6 +99,7 @@
 .subscr-form__button {
     padding: 10px 29px;
 
+    // @extend %centered-flex;
     display: flex;
     justify-content: center;
     align-items: center;
