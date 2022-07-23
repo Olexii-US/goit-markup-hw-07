@@ -1,4 +1,4 @@
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -10,9 +10,9 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
-:root {
+/* :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --primary-white-color: #FFFFFF;
@@ -24,7 +24,7 @@
   --logo-black: #000000;
 
   --cubic-bezier-stand: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 
 /* Статична зміння
@@ -47,7 +47,7 @@
 }
 @include centeredFlex; */
 
-ul {
+/* ul {
   list-style: none;
   margin: 0;
   padding-left: 0;
@@ -75,8 +75,8 @@ body {
   /* font-weight: 400; */
   color: var(--primary-text-color);
   background-color: var(--main-background);  
-}
-
+} */
+/* 
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -87,10 +87,10 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 
 /* Header-styles */
-
+/* 
 .header {
   border-bottom: 1px solid #ECECEC;
 }
@@ -102,9 +102,9 @@ body {
 
 .nav{
   display: flex;
-}
+} */
 
-.logo {
+/* .logo {
   font-family: 'Raleway',
   sans-serif;
   font-weight: 700;
@@ -124,8 +124,8 @@ body {
 }
 .logo__accent {
   color: var(--accent-colour);
-}
-
+} */
+/* 
 .nav__list {
   display: flex;
   align-items: center;
@@ -202,9 +202,9 @@ body {
 
 .contacts__icon:hover {
   fill: var(--accent-colour);
-}
+} */
 
-/* HERO */
+/* HERO
 
 .hero {
   text-align: center;
@@ -269,9 +269,9 @@ body {
 
 .hero__button:hover {
   background-color: #188CE8;
-}
+} */
 
-/* Наші особливості */
+/* Наші особливості
 
 .feature__list {
   display: flex;
@@ -305,17 +305,17 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-}
+} */
 
 /* чим ми займаємось */
 
-.secondary-title {
+/* .secondary-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
-}
-
+} */
+/* 
 .works {
   padding-top: 0;
 }
@@ -343,7 +343,7 @@ body {
   background-color: rgba(47, 48, 58, 0.8);
   text-transform: uppercase;
   font-weight: 700;
-}
+} */
 
 
 
@@ -414,7 +414,7 @@ body {
   height: 100%;
   border-radius: 50%;
 }
-
+/* 
 /* team__social */
 
 .team__social-links {
@@ -433,8 +433,8 @@ body {
 .team__social-link:focus {
   fill: var(--main-background);
   background-color: var(--accent-colour);
-}
-
+} */
+/* 
 /* постійні клієнти */
 
 .clients {
@@ -465,9 +465,9 @@ body {
 .clients__link:focus {
   fill: var(--accent-colour);
   border: 1px solid var(--accent-colour);
-}
+} */
 
-
+/* 
 /* footer */
 
 .footer {
@@ -580,8 +580,8 @@ body {
 
 .subscr-form__svg {
   margin-left: 10px;
-}
-
+} */
+/* 
 /* Модальне вікно */
 
 /* backdrop */
@@ -660,8 +660,8 @@ body {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 12px;
-  }
-
+  } */
+/* 
 /* client-form */
 
 .client-form__label {
@@ -792,7 +792,7 @@ body {
 }
 .button-modal:hover {
   background-color: #188CE8;
-}
+} */
 
 
 /* portfolio */
