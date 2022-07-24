@@ -58,7 +58,7 @@
     width: calc((100% - 60px) / 3);
     /* gap: 30px; */
 
-    &nth-child(3n) {
+    &:nth-child(3n) {
         margin-right: 0px;
     }
 

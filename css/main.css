@@ -12,7 +12,7 @@
   --cubic-bezier-stand: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox, .modal__button-close, .clients__link, .feature__box {
+.checkbox, .modal__button-close, .clients__link, .works__description, .feature__box, .social-links__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -135,20 +135,14 @@ body {
 .social-links {
   display: flex;
 }
-
 .social-links__item {
   width: 44px;
   height: 44px;
 }
-
 .social-links__item:not(:last-child) {
   margin-right: 10px;
 }
-
 .social-links__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -238,7 +232,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/Img-bg.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Img-bg.jpg);
 }
 
 .hero__title {
@@ -295,23 +289,17 @@ body {
 .works {
   padding-top: 0;
 }
-
 .works__list {
   display: flex;
   justify-content: space-between;
 }
-
 .works__item {
   position: relative;
 }
-
 .works__description {
   position: absolute;
   left: 0;
   bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 70px;
   color: var(--primary-white-color);
@@ -656,20 +644,20 @@ body {
   left: 54px;
   width: 16px;
   height: 15px;
-  background-image: url(../../img/uncheck.svg);
+  background-image: url(../img/uncheck.svg);
 }
 
 .checkbox__input:checked + .checkbox__svg {
-  background-image: url(../../img/check.svg);
+  background-image: url(../img/check.svg);
   opacity: 1;
 }
 
 .checkbox__input:focus-visible + .checkbox__svg {
-  background-image: url(../../img/uncheck-blue.svg);
+  background-image: url(../img/uncheck-blue.svg);
 }
 
 .checkbox__input:checked:focus-visible + .checkbox__svg {
-  background-image: url(../../img/check.svg);
+  background-image: url(../img/check.svg);
 }
 
 .checkbox__text {
@@ -744,15 +732,12 @@ body {
   width: calc((100% - 60px) / 3);
   /* gap: 30px; */
 }
-
 .project:nth-child(3n) {
   margin-right: 0px;
 }
-
 .project:nth-last-child(-n+3) {
   margin-bottom: 0px;
 }
-
 .project__link {
   display: block;
   transition: box-shadow 250ms var(--cubic-bezier-stand);
