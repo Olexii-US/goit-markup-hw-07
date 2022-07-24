@@ -98,20 +98,20 @@
     left: 54px;
     width: 16px;
     height: 15px;
-    background-image: url(../../img/uncheck.svg);
+    background-image: url(../img/uncheck.svg);
 }
 
 .checkbox__input:checked+.checkbox__svg {
-    background-image: url(../../img/check.svg);
+    background-image: url(../img/check.svg);
     opacity: 1;
 }
 
 .checkbox__input:focus-visible+.checkbox__svg {
-    background-image: url(../../img/uncheck-blue.svg);
+    background-image: url(../img/uncheck-blue.svg);
 }
 
 .checkbox__input:checked:focus-visible+.checkbox__svg {
-    background-image: url(../../img/check.svg);
+    background-image: url(../img/check.svg);
 }
 
 .checkbox__text {
